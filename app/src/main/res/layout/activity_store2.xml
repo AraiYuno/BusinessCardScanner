@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyleproject.businesscardscanner.StoreActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@android:color/holo_blue_dark"
+    >
+
+    <TextView
+        android:id="@+id/store_activity_theme"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retrieved_information"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="35dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/store_activity_theme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_store2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:text="No Text"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/scrollView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_id2"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="8dp"
+                android:text="Name"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/name_id_input"
+                tools:layout_editor_absoluteX="186dp" />
+
+            <EditText
+                android:id="@+id/name_id_input2"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/org_id"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/org_id2"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:text="Organisation"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/org_id_input"
+                tools:layout_editor_absoluteX="186dp" />
+
+            <EditText
+                android:id="@+id/org_id_input2"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/email_id"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/email_id2"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:text="Email Address"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/email_id_input"
+                tools:layout_editor_absoluteX="186dp" />
+
+            <EditText
+                android:id="@+id/email_id_input2"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="textEmailAddress"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/phoneNo_id"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/phoneNo_id2"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:text="Phone Number"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/phone_id_input"
+                tools:layout_editor_absoluteX="186dp" />
+
+            <EditText
+                android:id="@+id/phone_id_input2"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:inputType="phone"
+                app:layout_constraintBottom_toTopOf="@+id/create_button"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/create_button2"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:onClick="onClickNewContactButton"
+        android:text="New Contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</RelativeLayout>

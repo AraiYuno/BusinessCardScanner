@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyleproject.businesscardscanner.StoreActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/text_view_store"
+        android:layout_width="471dp"
+        android:layout_height="206dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="No Text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_id_input"
+        tools:layout_editor_absoluteX="186dp" />
+
+    <EditText
+        android:id="@+id/name_id_input"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/org_id"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/org_id"
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="Organisation"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/org_id_input"
+        tools:layout_editor_absoluteX="186dp" />
+
+    <EditText
+        android:id="@+id/org_id_input"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_id"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/email_id"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="Email Address"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_id_input"
+        tools:layout_editor_absoluteX="186dp" />
+
+    <EditText
+        android:id="@+id/email_id_input"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNo_id"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneNo_id"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_id_input"
+        tools:layout_editor_absoluteX="186dp" />
+
+    <EditText
+        android:id="@+id/phone_id_input"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/create_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onClickNewContactButton"
+        android:text="New Contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
